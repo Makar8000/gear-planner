@@ -600,7 +600,7 @@ export const MateriaSubstats: (Exclude<typeof ALL_SUB_STATS[number], 'vitality'>
  *
  * SkS/SpS are first because they realistically need to be in order for GCD-targeted auto-fill to work.
  */
-export const DefaultMateriaFillPrio: (Exclude<typeof ALL_SUB_STATS[number], 'vitality'>)[] = ['spellspeed', 'skillspeed', 'crit', 'dhit', 'determination', 'piety', 'tenacity'];
+export const DefaultMateriaFillPrio: (Exclude<typeof ALL_SUB_STATS[number], 'vitality'>)[] = ['spellspeed', 'crit', 'dhit', 'determination', 'skillspeed', 'piety', 'tenacity'];
 export type MateriaSubstat = typeof MateriaSubstats[number];
 
 /**
